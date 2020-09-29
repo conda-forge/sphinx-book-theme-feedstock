@@ -1,5 +1,5 @@
 {% set name = "sphinx-book-theme" %}
-{% set version = "0.0.36" %}
+{% set version = "0.0.37" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-book-theme-{{ version }}.tar.gz
-  sha256: bffaf3dd9099b07f1b628aff9e557e5ca16c71f0c8b4dc84a7a182303ae8b8cf
+  sha256: b3b344e7c296e7a9c6154bf37eef01320666708af8b78bbfc16185d8edf0dba0
 
 build:
   number: 0
@@ -18,14 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - beautifulsoup4
     - click
     - docutils >=0.15
-    - libsass
-    - pydata-sphinx-theme >=0.3.0
-    - python >=3.6
+    - pydata-sphinx-theme >=0.4.0,<0.5.0
+    - python >=3.7
     - pyyaml
     - sphinx
 
