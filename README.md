@@ -5,11 +5,11 @@ Home: https://jupyterbook.org/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-book-theme-feedstock/blob/master/LICENSE.txt)
 
 Summary: Jupyter Book: Create an online book with Jupyter Notebooks
 
-
+Development: https://github.com/jupyter/jupyter-book/
 
 Current build status
 ====================
