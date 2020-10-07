@@ -1,5 +1,5 @@
 {% set name = "sphinx-book-theme" %}
-{% set version = "0.0.37" %}
+{% set version = "0.0.38" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-book-theme-{{ version }}.tar.gz
-  sha256: b3b344e7c296e7a9c6154bf37eef01320666708af8b78bbfc16185d8edf0dba0
+  sha256: e64350754ce505f3aad101d79aad8089111b3797f2cb492d0cace01069579d36
 
 build:
   number: 0
