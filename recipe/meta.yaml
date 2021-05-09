@@ -46,8 +46,9 @@ test:
     - pytest-cov
     - pytest-regressions
     - sphinx-thebe
-    # fixed upstream in pydata-sphinx-theme-feedstock, but the solver still brings in build 0, which didn't specify the pin
+    # fixed upstream in pydata-sphinx-theme and jupyter-cache, but still brings in builds which didn't specify these pins
     - docutils <0.17
+    - sqlalchemy >=1.3.12,<1.4
 
 about:
   home: https://jupyterbook.org
