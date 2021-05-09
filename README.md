@@ -1,7 +1,7 @@
 About sphinx-book-theme
 =======================
 
-Home: https://jupyterbook.org/
+Home: https://jupyterbook.org
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-book-the
 
 Summary: Jupyter Book: Create an online book with Jupyter Notebooks
 
-Development: https://github.com/jupyter/jupyter-book/
+Development: https://github.com/executablebooks/sphinx-book-theme
+
+Documentation: https://sphinx-book-theme.readthedocs.io
 
 Current build status
 ====================
@@ -119,4 +121,5 @@ Feedstock Maintainers
 
 * [@anirrudh](https://github.com/anirrudh/)
 * [@chrisjsewell](https://github.com/chrisjsewell/)
+* [@conda-forge/jupyter-book](https://github.com/conda-forge/jupyter-book/)
 
