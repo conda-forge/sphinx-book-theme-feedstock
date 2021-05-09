@@ -1,19 +1,22 @@
 {% set name = "sphinx-book-theme" %}
 {% set version = "0.1.0" %}
 
-
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-book-theme-{{ version }}.tar.gz
-  sha256: b2db884eb9a843f7864a5660322ac7b0b9cd762f31341dedb4530f1546675bbd
+  - folder: dist
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    sha256: b2db884eb9a843f7864a5660322ac7b0b9cd762f31341dedb4530f1546675bbd
+  - folder: src
+    url: https://github.com/executablebooks/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+    sha256: a6cf62fafd54e562cf3789cde94b4dc3f3a9161567b7f9bc42386f9820c38156
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: cd dist && {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -23,27 +26,39 @@ requirements:
     - beautifulsoup4 >=4.6.1,<5
     - click
     - docutils >=0.15
-    - pydata-sphinx-theme >=0.4.1,<0.5.0
+    - pydata-sphinx-theme >=0.6.0,<0.7
     - python >=3.7
     - pyyaml
-    - sphinx
+    - sphinx >=2,<4
 
 test:
+  source_files:
+    - src/tests
   imports:
     - sphinx_book_theme
   commands:
     - pip check
+    - cd src
+    - pytest -vv --cov sphinx_book_theme --cov-report term-missing:skip-covered --no-cov-on-fail --cov-fail-under 87
   requires:
+    - myst-nb
     - pip
+    - pytest-cov
+    - pytest-regressions
+    - sphinx-thebe
+    # fixed upstream in pydata-sphinx-theme-feedstock, but the solver still brings in build 0, which didn't specify the pin
+    - docutils <0.17
 
 about:
-  home: https://jupyterbook.org/
+  home: https://jupyterbook.org
   summary: 'Jupyter Book: Create an online book with Jupyter Notebooks'
-  dev_url: https://github.com/jupyter/jupyter-book/
+  dev_url: https://github.com/executablebooks/sphinx-book-theme
   license: BSD-3-Clause
-  license_file: LICENSE
+  license_file: dist/LICENSE
+  doc_url: https://sphinx-book-theme.readthedocs.io
 
 extra:
   recipe-maintainers:
     - anirrudh
     - chrisjsewell
+    - conda-forge/jupyter-book
