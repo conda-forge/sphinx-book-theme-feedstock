@@ -1,5 +1,5 @@
 {% set name = "sphinx-book-theme" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name }}
@@ -8,10 +8,10 @@ package:
 source:
   - folder: dist
     url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 2fa4320264f4e365959f6a1370df7f76922781f0cc755a9e0974b1b17fa99888
+    sha256: 614c945e00e0c0ddebb1237d91f4c4d49c3654292b65eee0e701c08ad2396971
   - folder: src
     url: https://github.com/executablebooks/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 3c006473a6bb127c592b836b0b02e7c2863bc3e2b2b7f31b4b5d542a07680919
+    sha256: 20121a4d912bdd526b270fb6a11f03a964c4434aa10169acaf19767308317d84
 
 build:
   number: 0
@@ -24,13 +24,13 @@ requirements:
     - python >=3.7
   run:
     - beautifulsoup4 >=4.6.1,<5
-    - click
-    - docutils >=0.15
+    - click >=7.1,<8
+    - docutils >=0.15,<0.17
     - importlib_resources >=3.0,<3.5
     - pydata-sphinx-theme >=0.6.0,<0.7
     - python >=3.7
     - pyyaml
-    - sphinx >=2,<4
+    - sphinx >=3,<5
 
 test:
   source_files:
@@ -47,9 +47,6 @@ test:
     - pytest-cov
     - pytest-regressions
     - sphinx-thebe
-    # fixed upstream in pydata-sphinx-theme and jupyter-cache, but still brings in builds which didn't specify these pins
-    # - docutils <0.17
-    # - sqlalchemy >=1.3.12,<1.4
 
 about:
   home: https://jupyterbook.org
