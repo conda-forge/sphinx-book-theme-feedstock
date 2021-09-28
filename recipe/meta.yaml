@@ -24,13 +24,13 @@ requirements:
     - python >=3.7
   run:
     - beautifulsoup4 >=4.6.1,<5
-    - click
-    - docutils >=0.15
+    - click >=7.1,<8
+    - docutils >=0.15,<0.17
     - importlib_resources >=3.0,<3.5
     - pydata-sphinx-theme >=0.6.0,<0.7
     - python >=3.7
     - pyyaml
-    - sphinx >=2,<4
+    - sphinx >=3,<5
 
 test:
   source_files:
@@ -47,9 +47,6 @@ test:
     - pytest-cov
     - pytest-regressions
     - sphinx-thebe
-    # fixed upstream in pydata-sphinx-theme and jupyter-cache, but still brings in builds which didn't specify these pins
-    # - docutils <0.17
-    # - sqlalchemy >=1.3.12,<1.4
 
 about:
   home: https://jupyterbook.org
