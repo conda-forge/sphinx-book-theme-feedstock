@@ -1,5 +1,5 @@
 {% set name = "sphinx-book-theme" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 package:
   name: {{ name }}
@@ -8,10 +8,10 @@ package:
 source:
   - folder: dist
     url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 614c945e00e0c0ddebb1237d91f4c4d49c3654292b65eee0e701c08ad2396971
+    sha256: a9aa7e7e6eff879b998677a184d11a5835b6552732e7404776a2dfed942671f9
   - folder: src
     url: https://github.com/executablebooks/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 20121a4d912bdd526b270fb6a11f03a964c4434aa10169acaf19767308317d84
+    sha256: e06d6193b3d381e50be4a3614a0e5193f30cfc184534ed1d105098dd2a2a5613
 
 build:
   number: 0
