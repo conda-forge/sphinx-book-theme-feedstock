@@ -27,7 +27,7 @@ requirements:
     - click >=7.1,<8
     - docutils >=0.15,<0.17
     - importlib_resources >=3.0,<3.5
-    - pydata-sphinx-theme >=0.7.1,<0.8
+    - pydata-sphinx-theme >=0.6.0,<0.7re
     - python >=3.7
     - pyyaml
     - sphinx >=3,<5
