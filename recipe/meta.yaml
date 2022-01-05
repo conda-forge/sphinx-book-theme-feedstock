@@ -1,5 +1,5 @@
 {% set name = "sphinx-book-theme" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name }}
@@ -8,10 +8,10 @@ package:
 source:
   - folder: dist
     url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 42d3b166889f675074f2471de0a7ce4016f9a14e7ec2ab0c924c627f8de2d24b
+    sha256: f358e1de7564499a61f4061315386ac8a35e4ba4076974de6dffc9f934d9c00a
   - folder: src
     url: https://github.com/executablebooks/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: e08c3647dd57f7add5864bd82cff5baba709d94b91c9c8ab0a2f92f32a9457ea
+    sha256: e19b72c74c1af29f629a903c15f102c3ae1e15ff7c75fe30fbd400e5788b4152
 
 build:
   number: 0
@@ -26,7 +26,6 @@ requirements:
     - beautifulsoup4 >=4.6.1,<5
     - click >=7.1,<8
     - docutils >=0.15,<0.17
-    - importlib_resources >=3.0,<3.5
     - pydata-sphinx-theme >=0.7.2,<0.8
     - python >=3.7
     - pyyaml
@@ -49,12 +48,11 @@ test:
     - sphinx-thebe
 
 about:
-  home: https://jupyterbook.org
-  summary: 'Jupyter Book: Create an online book with Jupyter Notebooks'
+  home: https://sphinx-book-theme.readthedocs.org
+  summary: 'A clean book theme for scientific explanations and documentation with Sphinx'
   dev_url: https://github.com/executablebooks/sphinx-book-theme
   license: BSD-3-Clause
   license_file: dist/LICENSE
-  doc_url: https://sphinx-book-theme.readthedocs.io
 
 extra:
   recipe-maintainers:
