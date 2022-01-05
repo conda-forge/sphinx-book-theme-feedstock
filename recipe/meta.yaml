@@ -26,7 +26,6 @@ requirements:
     - beautifulsoup4 >=4.6.1,<5
     - click >=7.1,<8
     - docutils >=0.15,<0.17
-    - importlib_resources >=3.0,<3.5
     - pydata-sphinx-theme >=0.7.2,<0.8
     - python >=3.7
     - pyyaml
@@ -49,12 +48,11 @@ test:
     - sphinx-thebe
 
 about:
-  home: https://jupyterbook.org
-  summary: 'Jupyter Book: Create an online book with Jupyter Notebooks'
+  home: https://sphinx-book-theme.readthedocs.org
+  summary: 'A clean book theme for scientific explanations and documentation with Sphinx'
   dev_url: https://github.com/executablebooks/sphinx-book-theme
   license: BSD-3-Clause
   license_file: dist/LICENSE
-  doc_url: https://sphinx-book-theme.readthedocs.io
 
 extra:
   recipe-maintainers:
