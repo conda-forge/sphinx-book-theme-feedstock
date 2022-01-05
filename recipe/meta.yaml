@@ -1,5 +1,5 @@
 {% set name = "sphinx-book-theme" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name }}
@@ -8,10 +8,10 @@ package:
 source:
   - folder: dist
     url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: f358e1de7564499a61f4061315386ac8a35e4ba4076974de6dffc9f934d9c00a
+    sha256: 23538827b7a719b9d2b648ff2d43a4aa4310d721b4eed5696f129ed9d827df36
   - folder: src
     url: https://github.com/executablebooks/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: e19b72c74c1af29f629a903c15f102c3ae1e15ff7c75fe30fbd400e5788b4152
+    sha256: 71c18999a1daf17181697d16d7a6da0d53f4a49239d127b26c48d58500f7d591
 
 build:
   number: 0
@@ -49,7 +49,7 @@ test:
 
 about:
   home: https://sphinx-book-theme.readthedocs.org
-  summary: 'A clean book theme for scientific explanations and documentation with Sphinx'
+  summary: A clean book theme for scientific explanations and documentation with Sphinx
   dev_url: https://github.com/executablebooks/sphinx-book-theme
   license: BSD-3-Clause
   license_file: dist/LICENSE
