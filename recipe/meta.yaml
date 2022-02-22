@@ -1,20 +1,19 @@
-{% set name = "sphinx-book-theme" %}
 {% set version = "0.2.0" %}
 
 package:
-  name: {{ name }}
+  name: sphinx-book-theme
   version: {{ version }}
 
 source:
   - folder: dist
-    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    url: https://pypi.io/packages/source/s/sphinx-book-theme/sphinx-book-theme-{{ version }}.tar.gz
     sha256: 9f9762f2c6372e7ebaac905707628efe80386d3e5160945d8965d309aeed940d
   - folder: src
-    url: https://github.com/executablebooks/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+    url: https://github.com/executablebooks/sphinx-book-theme/archive/refs/tags/v{{ version }}.tar.gz
     sha256: 3d5521acf01a22895a40e09ac4b77410191ad8912b26f2215a7a0e9600849e84
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: cd dist && {{ PYTHON }} -m pip install . -vv
 
@@ -25,7 +24,6 @@ requirements:
   run:
     - beautifulsoup4 >=4.6.1,<5
     - docutils >=0.15,<0.17
-    - importlib-resources >=3.0,<3.5
     - pydata-sphinx-theme >=0.7.2,<0.8
     - python >=3.7
     - pyyaml
