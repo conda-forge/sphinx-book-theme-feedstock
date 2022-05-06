@@ -25,7 +25,8 @@ requirements:
   run:
     - beautifulsoup4 >=4.6.1,<5
     - docutils >=0.15,<0.17
-#    - importlib-resources >=3.0,<3.5
+    # only required for <3.7, see https://github.com/conda-forge/sphinx-book-theme-feedstock/issues/26
+    # - importlib-resources >=3.0,<3.5
     - pydata-sphinx-theme >=0.7.2,<0.8
     - python >=3.7
     - pyyaml
