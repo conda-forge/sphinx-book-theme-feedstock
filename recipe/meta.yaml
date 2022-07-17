@@ -35,7 +35,7 @@ test:
   commands:
     - pip check
     - cd src
-    - pytest -vv --cov=sphinx_book_theme --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=91
+    - pytest -vv --cov=sphinx_book_theme --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=90
   requires:
     - myst-nb >=0.13.2,<0.14.0
     - pip
