@@ -1,4 +1,4 @@
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: sphinx-book-theme
@@ -6,10 +6,10 @@ package:
 
 source:
   - url: https://pypi.io/packages/py3/s/sphinx-book-theme/sphinx_book_theme-{{ version }}-py3-none-any.whl
-    sha256: 4aed92f2ed9d27e002eac5dce1daa8eca42dd9e6464811533c569ee156a6f67d
+    sha256: 9685959dbbb492af005165ef1b9229fdd5d5431580ac181578beae3b4d012d91
   - folder: src
     url: https://github.com/executablebooks/sphinx-book-theme/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 250e30fa4bd71f2af2eb5d6e0039e58392bdc8a3175cb2533b28bba6b0148648
+    sha256: 70a8541c81491a3275d94872586b15009c939bb8df12d07bc189f49495bff52d
 
 build:
   number: 0
@@ -35,12 +35,13 @@ test:
   commands:
     - pip check
     - cd src
-    - pytest -vv --cov=sphinx_book_theme --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=91
+    - pytest -vv --cov=sphinx_book_theme --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=90
   requires:
-    - myst-nb
+    - myst-nb >=0.13.2,<0.14.0
     - pip
     - pytest-cov
     - pytest-regressions
+    - pytest >=6.0.1,<6.1.0
     - sphinx-thebe
 
 about:
