@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - sphinx_theme_builder
+    - sphinx-theme-builder
   run:
     - pydata-sphinx-theme >=0.13.0rc4
     - python >=3.7
