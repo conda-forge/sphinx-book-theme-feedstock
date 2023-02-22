@@ -1,4 +1,4 @@
 channel_sources:
-  - conda-forge/label/pydata-sphinx-theme_rc,conda-forge
+  - conda-forge/label/pydata-sphinx-theme_rc conda-forge
 channel_targets:
   - conda-forge sphinx-book-theme_rc
