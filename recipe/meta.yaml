@@ -22,10 +22,9 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - pydata-sphinx-theme >=0.8.0,<0.9.0
+    - pydata-sphinx-theme >=0.13.0
     - python >=3.7
-    - pyyaml
-    - sphinx >=3,<5
+    - sphinx >=4,<7
 
 test:
   source_files:
@@ -37,11 +36,11 @@ test:
     - cd src
     - pytest -vv --cov=sphinx_book_theme --cov-report=term-missing:skip-covered --no-cov-on-fail --cov-fail-under=90
   requires:
-    - myst-nb >=0.13.2,<0.14.0
+    - myst-nb
     - pip
     - pytest-cov
     - pytest-regressions
-    - pytest >=6.0.1,<6.1.0
+    - pytest
     - sphinx-thebe
 
 about:
