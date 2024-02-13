@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: sphinx-book-theme
@@ -6,10 +6,10 @@ package:
 
 source:
   - url: https://pypi.io/packages/py3/s/sphinx-book-theme/sphinx_book_theme-{{ version }}-py3-none-any.whl
-    sha256: 088bc69d65fab8446adb8691ed61687f71bf7504c9740af68bc78cf936a26112
+    sha256: ce4df1aaab385a3a9633fa797281937ea120a5170968b6eb817b11f3e08abc07
   - folder: src
     url: https://github.com/executablebooks/sphinx-book-theme/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: e5c29951c1032cced730cb6f03a37ab7e0b1c73939b994fbee9e1dc852b74958
+    sha256: 46fc9a22ddee138e3c7f28c8ab8fecc0da3504aeed7d6bd91335ca8445cbbb80
 
 build:
   number: 0
