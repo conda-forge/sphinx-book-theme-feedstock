@@ -22,7 +22,7 @@ requirements:
     - pip
     - python >=3.9
   run:
-    - pydata-sphinx-theme >=0.14.0
+    - pydata-sphinx-theme >=0.15.2
     - python >=3.9
     - sphinx >=5
 
@@ -39,7 +39,7 @@ test:
   requires:
     - beautifulsoup4
     - coverage
-    - mdit-py-plugins >=0.3.4,<0.4
+    - defusedxml
     - myst-nb
     - pip
     - pytest
