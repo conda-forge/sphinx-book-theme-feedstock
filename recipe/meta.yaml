@@ -5,14 +5,14 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/py3/s/sphinx-book-theme/sphinx_book_theme-{{ version }}-py3-none-any.whl
+  - url: https://pypi.org/packages/py3/s/sphinx-book-theme/sphinx_book_theme-{{ version }}-py3-none-any.whl
     sha256: a554a9a7ac3881979a87a2b10f633aa2a5706e72218a10f71be38b3c9e831ae9
   - folder: src
     url: https://github.com/executablebooks/sphinx-book-theme/archive/refs/tags/v{{ version }}.tar.gz
     sha256: 5f4d7ed67ce681b5732f35b218ea566df4a0d5b683791333207d1c094cbe335f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install --find-links . --no-index --ignore-installed --no-deps sphinx-book-theme
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
   run:
     - pydata-sphinx-theme >=0.15.2
-    - python >=3.9
+    - python >={{ python_min }}
     - sphinx >=5
 
 test:
@@ -45,6 +45,7 @@ test:
     - pytest
     - pytest-regressions
     - sphinx-thebe >=0.2
+    - python {{ python_min }}
 
 about:
   home: https://sphinx-book-theme.readthedocs.org
