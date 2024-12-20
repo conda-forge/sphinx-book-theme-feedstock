@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - pydata-sphinx-theme >=0.15.2
     - python >={{ python_min }}
@@ -42,10 +43,10 @@ test:
     - defusedxml
     - myst-nb
     - pip
+    - python {{ python_min }}
     - pytest
     - pytest-regressions
     - sphinx-thebe >=0.2
-    - python {{ python_min }}
 
 about:
   home: https://sphinx-book-theme.readthedocs.org
