@@ -146,5 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@anirrudh](https://github.com/anirrudh/)
-* [@conda-forge/jupyter-book](https://github.com/conda-forge/jupyter-book/)
+* [@conda-forge/jupyter-book](https://github.com/orgs/conda-forge/teams/jupyter-book/)
 
