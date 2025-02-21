@@ -3,7 +3,7 @@ About sphinx-book-theme-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-book-theme-feedstock/blob/main/LICENSE.txt)
 
-Home: https://sphinx-book-theme.readthedocs.org
+Home: https://sphinx-book-theme.readthedocs.org/
 
 Package license: BSD-3-Clause
 
