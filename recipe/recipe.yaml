@@ -35,8 +35,7 @@ tests:
   - python:
       pip_check: true
       python_version: ${{ python_min }}.*
-      imports:
-        - sphinx_book_theme
+      imports: sphinx_book_theme
   - files:
       recipe:
         - run_test.py
