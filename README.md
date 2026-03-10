@@ -3,13 +3,15 @@ About sphinx-book-theme-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-book-theme-feedstock/blob/main/LICENSE.txt)
 
-Home: https://sphinx-book-theme.readthedocs.org/
+Home: https://pypi.org/project/sphinx-book-theme
 
 Package license: BSD-3-Clause
 
 Summary: A clean book theme for scientific explanations and documentation with Sphinx
 
 Development: https://github.com/executablebooks/sphinx-book-theme
+
+Documentation: https://sphinx-book-theme.readthedocs.org/
 
 Current build status
 ====================
