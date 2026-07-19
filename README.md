@@ -20,7 +20,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/sphinx-book-theme-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/sphinx-book-theme-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -148,7 +150,4 @@ Feedstock Maintainers
 
 * [@anirrudh](https://github.com/anirrudh/)
 * [@conda-forge/jupyter-book](https://github.com/orgs/conda-forge/teams/jupyter-book/)
-
-
-<!-- dummy commit to enable rerendering -->
 
